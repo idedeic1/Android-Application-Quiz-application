@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/RedniBroj"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imeIgraca"
+        app:layout_constraintEnd_toStartOf="@+id/imeIgraca"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imeIgraca" />
+
+    <TextView
+        android:id="@+id/imeIgraca"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/procenatTacnih"
+        app:layout_constraintEnd_toStartOf="@+id/procenatTacnih"
+        app:layout_constraintStart_toEndOf="@+id/RedniBroj" />
+
+    <TextView
+        android:id="@+id/procenatTacnih"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imeIgraca"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

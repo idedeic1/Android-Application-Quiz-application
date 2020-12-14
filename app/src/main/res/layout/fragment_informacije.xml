@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/informacijePlace"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aktivnosti.IgrajKvizAkt">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Naziv kviza:"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/infNazivKviza"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Broj tacnih odgovora:"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/infBrojTacnihPitanja"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preostalo pitanja:"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/infBrojPreostalihPitanja"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Procenat tacnih odgovora:"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/infProcenatTacni"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnKraj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kraj" />
+
+    </LinearLayout>
+</FrameLayout>

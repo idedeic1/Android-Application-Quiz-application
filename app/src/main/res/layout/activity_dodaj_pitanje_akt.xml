@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".aktivnosti.DodajPitanjeAkt">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/etNaziv"
+            android:layout_width="384dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Naziv pitanja - INPUT" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="376dp"
+            android:layout_height="wrap_content"
+            android:text="Odgovori"
+            android:textAlignment="center" />
+
+        <ListView
+            android:id="@+id/lvOdgovori"
+            android:layout_width="match_parent"
+            android:layout_height="248dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="34dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <EditText
+            android:id="@+id/etOdgovor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Odgovori" />
+
+        <Button
+            android:id="@+id/btnDodajOdgovor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dodaj" />
+
+        <Button
+            android:id="@+id/btnDodajTacan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dodaj tacan" />
+
+        <Button
+            android:id="@+id/btnDodajPitanje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Spasi pitanje" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

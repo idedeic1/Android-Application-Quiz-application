@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".aktivnosti.DodajKategorijuAkt">
+
+    <EditText
+        android:id="@+id/etNaziv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="19dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Naziv kategorije"
+        app:layout_constraintBottom_toTopOf="@+id/btnDodajIkonu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etIkona"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="14dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Ikona"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDodajIkonu"
+        app:layout_constraintEnd_toStartOf="@+id/btnDodajIkonu"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnDodajIkonu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="56dp"
+        android:text="Dodaj ikonu"
+        app:layout_constraintBottom_toTopOf="@+id/btnDodajKategoriju"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etIkona"
+        app:layout_constraintTop_toBottomOf="@+id/etNaziv" />
+
+    <Button
+        android:id="@+id/btnDodajKategoriju"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="300dp"
+        android:text="Spasi kategoriju"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDodajIkonu" />
+</android.support.constraint.ConstraintLayout>
